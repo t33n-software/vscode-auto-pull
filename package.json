@@ -91,11 +91,11 @@
     "coverage": "vitest run --coverage",
     "package": "pnpm run typecheck && pnpm run coverage && pnpm run bundle:prod && node ./scripts/package-vsix.cjs"
   },
-  "packageManager": "pnpm@11.7.0",
+  "packageManager": "pnpm@12.17.0",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.7.0",
+      "version": "12.17.0",
       "onFail": "error"
     }
   },
