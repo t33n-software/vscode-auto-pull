@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 4,
+  "toolchain": { "language": "node-typescript", "version": "26.13.0" },
+  "extends": [],
+  "defaults": {
+    "includeFamilies": ["feature", "fix", "docs", "refactor", "chore", "test", "perf", "hotfix"]
+  },
+  "gates": [
+    {
+      "name": "typecheck",
+      "command": "pnpm",
+      "args": ["run", "typecheck"],
+      "timeout": "15m"
+    },
+    {
+      "name": "test",
+      "command": "pnpm",
+      "args": ["run", "test"],
+      "timeout": "15m"
+    }
+  ]
+}
